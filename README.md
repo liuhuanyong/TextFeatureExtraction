@@ -3,7 +3,7 @@ Self complement of text feature extraction using algorithms including CHI, DF, I
 基于卡方检验CHI，文档频率DF, 信息增益IG，互信息MI的文本特征提取与实现
 
 # 引入
-from feature_extract import *
+from feature_extract import *  
 dataer = FeatureExtract()  
 # 设定提取特征数目，设置为5000  
 features_num = 5000  
