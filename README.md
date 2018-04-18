@@ -8,14 +8,13 @@ dataer = FeatureExtract()
 # 设定提取特征数目，设置为5000  
 features_num = 5000  
 # 基于词语文档频率的特征词提取  
-features = dataer.DF(feature_num)  
+features = dataer.DF(features_num)  
 # 基于词语卡方信息的特征词提取  
-features = dataer.CHI(feature_num)  
+features = dataer.CHI(features_num)  
 # 基于词语互信息的特征词提取  
-features = dataer.MI(feature_num)  
+features = dataer.MI(features_num)  
 # 基于词语信息增益频率的特征词提取   
-features = dataer.IG(feature_num)  
-
+features = dataer.IG(features_num)  
 # 输入：
 data/data.txt: 搜狗文本分类语料库，共10个类别：  
 '0': '汽车',  
